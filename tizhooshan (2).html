@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>محاسبه درصد آزمون تیزهوشان</title>
+    </head>
+    <body>
+        <h1>محاسبه درصد آزمون تیزهوشان</h1>
+        <button onclick="click()">محاسبه کن</button>
+    </body>
+    <style>
+        body{
+            background-color:rgb(28, 218, 155);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button{
+            background-color:rgb(44, 37, 138);
+            border-radius: 20px;
+            height: 70px;
+            width:400px;
+            text-align: center;
+        }
+
+    </style>
+    <script>
+    function darsad(){ 
+        var t1 = prompt("تعداد سوالات درست را وارد کنید")
+        var f1 = prompt("تعداد سوالات غلط را وارد کنید")
+        var all1 = prompt('تعداد کل سوالات را وارد کنید')
+        // پایان بخش وروردی
+        var t2 = t1*3
+        var all2 = all1*3
+        var x = t2 - f1
+        // پایان بخش تبدیل های اولیه
+        var xforall = all2/100
+        var all3 = all2/xforall
+        var x2 = x/xforall
+        // پایان بخش تبدیل مخرج به 100
+        var darsad = x2/all3
+        // پایان بخش آماده کردن خروجی
+        alert('درصد شما برابر است با:'+darsad+'%')
+        alert("خدانگهدار😁😁😊")
+    }
+
+
+    </script>
+</html>
